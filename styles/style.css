@@ -14,7 +14,7 @@
   min-inline-size: 320px;
   min-block-size: 100dvb;
   font-family: var(--accent-fonts), sans-serif;
-  font-variation-settings: var(--weight--fonts-text-card);
+  font-variation-settings: 'wght' var(--weight--fonts-text-card);
   background-image: var(--backgrounnd-gradient);
   background-size: cover;
 }
@@ -118,7 +118,6 @@ section {
   position: relative;
   cursor: pointer;
   color: var(--color-text);
-  background-color: #fff;
 }
 
 .card__like-button:focus {
