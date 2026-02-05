@@ -1,1 +1,1 @@
-https://maxson1437.github.io/zakrivayuschiy-teg-f/
+https://github.com/maxson1437/zakrivayuschiy-teg-f
