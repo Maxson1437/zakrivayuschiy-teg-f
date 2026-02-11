@@ -19,8 +19,8 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
-  font-family: var(--accent-fonts, 'Inter'), sans-serif;
-  font-variation-settings: 'wght' var(--weight--fonts-text-card, 410);
+  font-family: var(--accent-fonts, "Inter"), sans-serif;
+  font-variation-settings: "wght" var(--weight--fonts-text-card, 410);
   background-image: var(--backgrounnd-gradient);
   background-attachment: fixed;
   background-size: cover;
@@ -39,9 +39,9 @@
   padding-block: clamp(7.625rem, 15vh, 8.125rem);
   padding-inline: clamp(1rem, 4vw, 7.656rem);
   margin-block: 100px;
-  font-family: var(--main-fonts, 'PressStart2P'), sans-serif;
+  font-family: var(--main-fonts, "PressStart2P"), sans-serif;
   font-weight: 400;
-  }
+}
 
 .size-block {
   inline-size: var(--width-block);
@@ -75,8 +75,8 @@
 }
 
 .card__title {
-  font-family: var(--accent-fonts, 'Inter'), sans-serif;
-  font-variation-settings: 'wght' 715;
+  font-family: var(--accent-fonts, "Inter"), sans-serif;
+  font-variation-settings: "wght" 715;
   font-size: 18px;
   line-height: 120%;
   vertical-align: middle;
@@ -88,30 +88,29 @@
   display: block;
   inline-size: 100%;
   block-size: 100%;
-  }
+}
 
 .img__container {
   position: relative;
-  border-top: 2px solid var(--accent-color,#000);
-  border-bottom: 2px solid var(--accent-color,#000);
+  border-top: 2px solid var(--accent-color, #000);
+  border-bottom: 2px solid var(--accent-color, #000);
   margin: 0;
-  }
+}
 
 .card__description {
   padding: 25px;
   display: flex;
   flex-direction: column;
   gap: 25px;
-  }
+}
 
 .card__text {
-  font-family: var(--accent-fonts, 'Inter'), sans-serif;
+  font-family: var(--accent-fonts, "Inter"), sans-serif;
   font-size: 18px;
-  font-family: var(--accent-fonts, 'Inter'), sans-serif;
-  font-variation-settings: 'wght' 410;
+  font-variation-settings: "wght" 410;
   line-height: 21px;
-  padding-inline-end: 5px;  
-  }
+  padding-inline-end: 5px;
+}
 
 .card__buttons {
   display: flex;
@@ -131,7 +130,6 @@
   padding: 8px 36px;
   line-height: 90%;
 }
-
 
 .card__like-button:focus {
   outline: none;
@@ -177,7 +175,6 @@
   transition: outline 0.3s ease;
   cursor: pointer;
   outline: 2px solid transparent;
-
 }
 
 .card__icon-button:focus {
@@ -189,7 +186,7 @@
 }
 
 .label__card {
-  font-family: var(--main-fonts, 'PressStart2P'), sans-serif;
+  font-family: var(--main-fonts, "PressStart2P"), sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 100%;
@@ -200,13 +197,13 @@
   top: 25px;
   right: 25px;
   color: var(--accent-color, #000);
-  text-shadow: 1px 1px var(--color-shadow-label,#000);
+  text-shadow: 1px 1px var(--color-shadow-label, #000);
 }
 
-@supports (-webkit-text-stroke: 1px var(--color-shadow-label,#000)) {
+@supports (-webkit-text-stroke: 1px var(--color-shadow-label, #000)) {
   .label__card {
     text-shadow: none;
-    -webkit-text-stroke: 1px var(--color-shadow-label,#000);
+    -webkit-text-stroke: 1px var(--color-shadow-label, #000);
   }
 }
 
@@ -324,7 +321,6 @@
 }
 
 @media (width > 376px) {
-  
   .save__memory-button {
     flex-direction: row;
   }
@@ -407,7 +403,6 @@
 .like-icon.is-liked .contour {
   fill: var(--animation-fill-color);
 }
-
 
 .like-icon.is-liked .heart {
   transform-origin: center;
