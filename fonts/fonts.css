@@ -9,5 +9,5 @@
     src: url('./Inter-Variable.woff2') format('woff2 supports variations'),
     url('./Inter-Variable.woff2') format('woff2-variations');
     font-weight: 400 785;
-    font-variation-settings: -10 0;
+    font-variation-settings: 'slnt' -10 0;
 }

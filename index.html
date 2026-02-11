@@ -18,20 +18,21 @@
       <h1 class="header__title">&lt;/html&gt;</h1>
       <p class="header__text">закрывающий тег</p>
     </header>
-    <main class="cards">
-      <section class="section size-block">
+    <main class="main__content">
+      <article class="card size-block">
         <h2 class="card__title">
           Фритрек и нулевой спринт: Подготовка к работе
         </h2>
-        <div class="img__container">
+        <figure class="img__container">
           <img
             src="./images/image.png"
             class="card__image"
             alt="пиксельный микроавтобус"
+            loading="lazy"
           />
-          <span class="label__card">&lt;/html&gt;</span>
-        </div>
-        <article class="card__description">
+          <span class="label__card" aria-hidden="true">&lt;/html&gt;</span>
+        </figure>
+        <div class="card__description">
           <p class="card__text">
             Это было самое начало пути. На этом этапе важно было проникнуться
             основами и настроиться на учёбу. И, возможно, подумать, как новые
@@ -41,7 +42,7 @@
             Место для ваших воспоминаний о начале обучения.
           </p>
           <div class="card__buttons">
-            <button class="card__icon-button">
+            <button type="submit" class="card__icon-button" aria-label="Поставить лайк карточке">
               <svg
                 class="like-icon"
                 width="39"
@@ -49,7 +50,7 @@
                 viewBox="0 0 39 36"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-              >
+                aria-hidden="true">
                 <g class="heart" clip-path="url(#clip0_1_1574)">
                   <path
                     class="contour"
@@ -74,23 +75,24 @@
                 </g>
               </svg>
             </button>
-            <button class="card__like-button">
+            <button type="submit" class="card__like-button">
               <span class="button__text"> Like </span>
             </button>
           </div>
-        </article>
-      </section>
-      <section class="section size-block">
+        </div>
+      </article>
+      <article class="card size-block">
         <h2 class="card__title">1 спринт: Я — чистый лист</h2>
-        <div class="img__container">
+        <figure class="img__container">
           <img
             src="./images/Plasuer.jpg"
             class="card__image contrast"
             alt="Мозг в плаще на розовом фоне"
+            loading="lazy"
           />
-          <span class="label__card">&lt;/Радость учебы&gt;</span>
-        </div>
-        <article class="card__description">
+          <span class="label__card" aria-hidden="true">&lt;/Радость учебы&gt;</span>
+        </figure>
+        <div class="card__description">
           <p class="card__text">
             На первых этапах мы работали со страхами и сомнениями, которые часто
             испытывают новички. Один из них — страх перед чистым листом. Это,
@@ -102,7 +104,7 @@
             Место для ваших воспоминаний о начале первого спринта.
           </p>
           <div class="card__buttons">
-            <button class="card__icon-button">
+            <button type="submit" class="card__icon-button" aria-label="Поставить лайк карточке">
               <svg
                 class="like-icon"
                 width="39"
@@ -110,7 +112,7 @@
                 viewBox="0 0 39 36"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-              >
+                aria-hidden="true">
                 <g class="heart" clip-path="url(#clip0_1_1574)">
                   <path
                     class="contour"
@@ -135,23 +137,24 @@
                 </g>
               </svg>
             </button>
-            <button class="card__like-button">
+            <button type="submit" class="card__like-button">
               <span class="button__text"> Like </span>
             </button>
           </div>
-        </article>
-      </section>
-      <section class="section size-block">
+        </div>
+      </article>
+      <article class="card size-block">
         <h2 class="card__title">1 спринт: А если не получится?</h2>
-        <div class="img__container">
+        <figure class="img__container">
           <img
             src="./images/Happy.jpg"
             class="card__image brightness"
             alt="Радующийся молодой человек"
+            loading="lazy"
           />
-          <span class="label__card">&lt;/Маленькое достижение&gt;</span>
-        </div>
-        <article class="card__description">
+          <span class="label__card" aria-hidden="true">&lt;/Маленькое достижение&gt;</span>
+        </figure>
+        <div class="card__description">
           <p class="card__text">
             Первый проект — позади! Но это всё ещё самое начало пути. Радость
             могла быстро померкнуть и смениться ожиданием провала. Или вы,
@@ -161,7 +164,7 @@
             Место для ваших воспоминаний об окончании первого спринта.
           </p>
           <div class="card__buttons">
-            <button class="card__icon-button">
+            <button type="submit" class="card__icon-button" aria-label="Поставить лайк карточке">
               <svg
                 class="like-icon"
                 width="39"
@@ -169,7 +172,7 @@
                 viewBox="0 0 39 36"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-              >
+                aria-hidden="true">
                 <g class="heart" clip-path="url(#clip0_1_1574)">
                   <path
                     class="contour"
@@ -194,23 +197,24 @@
                 </g>
               </svg>
             </button>
-            <button class="card__like-button">
+            <button type="submit" class="card__like-button">
               <span class="button__text"> Like </span>
             </button>
           </div>
-        </article>
-      </section>
-      <section class="section size-block">
+        </div>
+      </article>
+      <article class="card size-block">
         <h2 class="card__title">2 спринт: Погоня за идеалом</h2>
-        <div class="img__container">
+        <figure  class="img__container">
           <img
             src="./images/Work.jpg"
             class="card__image sepia"
             alt="Человек за ноутбуком"
+            loading="lazy"
           />
-          <span class="label__card">&lt;/Новые знания&gt;</span>
-        </div>
-        <article class="card__description">
+          <span class="label__card" aria-hidden="true">&lt;/Новые знания&gt;</span>
+        </figure>
+        <div class="card__description">
           <p class="card__text">
             На этом этапе вы уже достаточно разбирались в основах вёрстки, чтобы
             понять, как много ещё впереди. Вы могли попытаться погнаться за
@@ -222,7 +226,7 @@
             Место для ваших воспоминаний о начале второго спринта.
           </p>
           <div class="card__buttons">
-            <button class="card__icon-button">
+            <button type="submit" class="card__icon-button" aria-label="Поставить лайк карточке">
               <svg
                 class="like-icon"
                 width="39"
@@ -230,7 +234,7 @@
                 viewBox="0 0 39 36"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-              >
+                aria-hidden="true">
                 <g class="heart" clip-path="url(#clip0_1_1574)">
                   <path
                     class="contour"
@@ -255,23 +259,24 @@
                 </g>
               </svg>
             </button>
-            <button class="card__like-button">
+            <button type="submit" class="card__like-button">
               <span class="button__text"> Like </span>
             </button>
           </div>
-        </article>
-      </section>
-      <section class="section size-block">
+        </div>
+      </article>
+      <article class="card size-block">
         <h2 class="card__title">2 спринт: О тех, кто рядом</h2>
-        <div class="img__container">
+        <figure class="img__container">
           <img
             src="./images/Funny.jpg"
             class="card__image grayscale"
             alt="Улыбающаяся эмоция"
+            loading="lazy"
           />
-          <span class="label__card">&lt;/Радость близки&gt;</span>
-        </div>
-        <article class="card__description">
+          <span class="label__card" aria-hidden="true">&lt;/Радость близки&gt;</span>
+        </figure>
+        <div class="card__description">
           <p class="card__text">
             Всё это время вы были не одиноки (хотя, возможно, иногда и
             чувствовали, что одни против целого мира). Вас окружали
@@ -284,7 +289,7 @@
             Место для ваших воспоминаний об окончании второго спринта.
           </p>
           <div class="card__buttons">
-            <button class="card__icon-button">
+            <button type="submit" class="card__icon-button" aria-label="Поставить лайк карточке">
               <svg
                 class="like-icon"
                 width="39"
@@ -292,7 +297,7 @@
                 viewBox="0 0 39 36"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-              >
+                aria-hidden="true">
                 <g class="heart" clip-path="url(#clip0_1_1574)">
                   <path
                     class="contour"
@@ -317,23 +322,24 @@
                 </g>
               </svg>
             </button>
-            <button class="card__like-button">
+            <button type="submit" class="card__like-button">
               <span class="button__text"> Like </span>
             </button>
           </div>
-        </article>
-      </section>
-      <section class="section size-block">
+        </div>
+      </article>
+      <article class="card size-block">
         <h2 class="card__title">3 спринт: Обходные стратегии</h2>
-        <div class="img__container">
+        <figure class="img__container">
           <img
             src="./images/Yooho.jpg"
             class="card__image saturate"
             alt="Радующийся человек с лампочкой над головой"
+            loading="lazy"
           />
-          <span class="label__card">&lt;/Поиск решений&gt;</span>
-        </div>
-        <article class="card__description">
+          <span class="label__card" aria-hidden="true">&lt;/Поиск решений&gt;</span>
+        </figure>
+        <div class="card__description">
           <p class="card__text">
             На этом курсе вы постоянно решали разные задачи. В какой-то момент
             вам могло показаться, что решения просто иссякли. Значит, пришло
@@ -343,7 +349,7 @@
             Место для ваших воспоминаний о начале третьего спринта.
           </p>
           <div class="card__buttons">
-            <button class="card__icon-button">
+            <button type="submit" class="card__icon-button" aria-label="Поставить лайк карточке">
               <svg
                 class="like-icon"
                 width="39"
@@ -351,7 +357,7 @@
                 viewBox="0 0 39 36"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-              >
+                aria-hidden="true">
                 <g class="heart" clip-path="url(#clip0_1_1574)">
                   <path
                     class="contour"
@@ -376,23 +382,24 @@
                 </g>
               </svg>
             </button>
-            <button class="card__like-button">
+            <button type="submit" class="card__like-button">
               <span class="button__text"> Like </span>
             </button>
           </div>
-        </article>
-      </section>
-      <section class="section size-block">
+        </div>
+      </article>
+      <article class="card size-block">
         <h2 class="card__title">3 спринт: Когда опускаются руки</h2>
-        <div class="img__container">
+        <figure class="img__container">
           <img
             src="./images/Sadly.jpg"
             class="card__image invert"
             alt="Человек, положивший голову на стол"
+            loading="lazy"
           />
-          <span class="label__card">&lt;/Грусть&gt;</span>
-        </div>
-        <article class="card__description">
+          <span class="label__card" aria-hidden="true">&lt;/Грусть&gt;</span>
+        </figure>
+        <div class="card__description">
           <p class="card__text">
             Во время учёбы часто возникает чувство, когда не знаешь, за что
             хвататься. Вроде и проектную пора сдавать, и задачи хочется
@@ -404,7 +411,7 @@
             Место для ваших воспоминаний об окончании третьего спринта.
           </p>
           <div class="card__buttons">
-            <button class="card__icon-button">
+            <button type="submit" class="card__icon-button" aria-label="Поставить лайк карточке">
               <svg
                 class="like-icon"
                 width="39"
@@ -412,7 +419,7 @@
                 viewBox="0 0 39 36"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-              >
+                aria-hidden="true">
                 <g class="heart" clip-path="url(#clip0_1_1574)">
                   <path
                     class="contour"
@@ -437,23 +444,24 @@
                 </g>
               </svg>
             </button>
-            <button class="card__like-button">
+            <button type="submit" class="card__like-button">
               <span class="button__text"> Like </span>
             </button>
           </div>
-        </article>
-      </section>
-      <section class="section size-block">
+        </div>
+      </article>
+      <article class="card size-block">
         <h2 class="card__title">«Сейчас я здесь»</h2>
-        <div class="img__container">
+        <figure class="img__container">
           <img
             src="./images/Patrick.jpg"
             class="card__image multy__filter"
             alt="Грустный Патрик"
+            loading="lazy"
           />
-          <span class="label__card">&lt;/Печаль&gt;</span>
-        </div>
-        <article class="card__description">
+          <span class="label__card" aria-hidden="true">&lt;/Печаль&gt;</span>
+        </figure>
+        <div class="card__description">
           <p class="card__text">
             Сейчас вы уже очень много знаете о вёрстке. Но это только начало.
             Во-первых, впереди ещё много материала про «красотищу». Во-вторых, с
@@ -467,7 +475,7 @@
             этой точке пути.
           </p>
           <div class="card__buttons">
-            <button class="card__icon-button">
+            <button type="submit" class="card__icon-button" aria-label="Поставить лайк карточке">
               <svg
                 class="like-icon"
                 width="39"
@@ -475,7 +483,7 @@
                 viewBox="0 0 39 36"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-              >
+                aria-hidden="true">
                 <g class="heart" clip-path="url(#clip0_1_1574)">
                   <path
                     class="contour"
@@ -500,34 +508,39 @@
                 </g>
               </svg>
             </button>
-            <button class="card__like-button">
+            <button type="submit" class="card__like-button">
               <span class="button__text"> Like </span>
             </button>
           </div>
-        </article>
-      </section>
+        </div>
+      </article>
     </main>
-    <script src="./scripts/like.js"></script>
-    <button
-      class="save__memory-button"
+    <footer class="footer">
+     <button
       type="button"
-      onclick="window.memory.showModal()"
-    >
-      <svg viewBox="0 0 39 39" width="28" height="28">
+      class="save__memory-button"
+      onclick="window.memory.showModal()">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 39 39" width="28" height="28" class="floppy" overflow="visible">
         <use href="./svg/floppy.svg#floppy"></use>
       </svg>
       <span class="button__text"> Сохранить на память </span>
     </button>
     <dialog class="dialog" id="memory">
-      <article class="dialog_content">
-        <svg viewBox="0 0 39 39" width="39" height="39" class="floppy">
+      <div class="dialog_content">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 39 39" width="39" height="39" class="floppy ">
           <use href="./svg/floppy.svg#floppy"></use>
         </svg>
-        <span class="dialog__text"> Вставьте дискету, чтобы продолжить </span>
-      </article>
-      <button class="dialog__button" onclick="window.memory.close()">
+        <p class="dialog__text"> Вставьте дискету, чтобы продолжить </p>
+      </div>
+      <button 
+      type="button"
+      class="dialog__button" 
+      onclick="window.memory.close()">
         <span class="button__text"> ОК </span>
       </button>
     </dialog>
-  </body>
+    </footer>
+    <script src="./scripts/like.js"></script>
+    </body>
 </html>
+

@@ -10,7 +10,7 @@
 
 */
 
-@keyframes scale_heart {
+@keyframes scaleSize {
   from {
     transform: scale(1);
   }
@@ -20,7 +20,7 @@
   }
 }
 
-@keyframes visible_sparks {
+@keyframes changeOpacity {
   from {
     opacity: 0;
   }
