@@ -10,12 +10,6 @@
 
 */
 
-/*
-1. В местах где используются переменные прописать альтернативные значения.
-
-4. 
-*/
-
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
@@ -24,7 +18,6 @@
   background-image: var(--backgrounnd-gradient);
   background-attachment: fixed;
   background-size: cover;
-  padding-block-end: 100px;
 }
 
 .header {
@@ -36,8 +29,7 @@
   gap: 20px;
   align-items: center;
   border: 2px solid var(--accent-color, #000);
-  padding-block: clamp(7.625rem, 15vh, 8.125rem);
-  padding-inline: clamp(1rem, 4vw, 7.656rem);
+  padding: 122px 16px;
   margin-block: 100px;
   font-family: var(--main-fonts, "PressStart2P"), sans-serif;
   font-weight: 400;
@@ -76,7 +68,7 @@
 
 .card__title {
   font-family: var(--accent-fonts, "Inter"), sans-serif;
-  font-variation-settings: "wght" 715;
+  font-variation-settings: "wght" var(--weight-fonts-title-card, 715);
   font-size: 18px;
   line-height: 120%;
   vertical-align: middle;
@@ -120,40 +112,42 @@
   justify-self: center;
 }
 
-.card__like-button {
-  border: 2px solid var(--accent-color, #000);
-  background-color: transparent;
-  transition: box-shadow 0.3s ease;
-  position: relative;
+.button {
   cursor: pointer;
+  position: relative;
+  transition: box-shadow 0.3s ease;
   color: var(--color-text, #fff);
-  padding: 8px 36px;
-  line-height: 90%;
+  border: 2px solid var(--accent-color, #000);
+  background-color: #fff;
 }
 
-.card__like-button:focus {
-  outline: none;
-}
-
-.card__like-button:focus-visible {
-  outline: none;
-  box-shadow: 2px 2px var(--accent-color, #000);
-}
-
-.card__like-button::before {
+.button::before {
   content: "";
-  background-color: #000;
+  background-color: var(--accent-color, #000);
   position: absolute;
   inset: 0;
-  block-size: 100%;
   inline-size: 100%;
+  block-size: 100%;
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 0.5s ease-in-out;
 }
 
-.card__like-button:hover::before {
+.button:hover::before {
   transform: scaleX(1);
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button:focus-visible {
+  outline: none;
+  box-shadow: 2px 2px var(--accent-color, #000);
+}
+
+.card__like-button {
+  padding: 8px 36px;
 }
 
 .button__text {
@@ -207,12 +201,11 @@
   }
 }
 
-.footer {
-  margin-block-start: 50px;
+.save__button-area {
+  margin-block-end: 100px;
 }
 
 .save__memory-button {
-  border-width: 2px;
   opacity: 1;
   display: flex;
   flex-direction: column;
@@ -220,32 +213,6 @@
   justify-self: center;
   align-items: center;
   padding: 15px 20px;
-  transition: box-shadow 0.3s ease;
-  cursor: pointer;
-  position: relative;
-  color: var(--color-text, #fff);
-  background-color: #fff;
-}
-
-.save__memory-button:focus {
-  outline: none;
-  box-shadow: 2px 2px var(--accent-color, #000);
-}
-
-.save__memory-button::before {
-  content: "";
-  background-color: var(--accent-color, #000);
-  position: absolute;
-  inset: 0;
-  inline-size: 100%;
-  block-size: 100%;
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: transform 0.5s ease-in-out;
-}
-
-.save__memory-button:hover::before {
-  transform: scaleX(1);
 }
 
 .save__memory-button svg {
@@ -281,7 +248,7 @@
 }
 
 .dialog__text {
-  font-family: var(--main-fonts);
+  font-family: var(--main-fonts), sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 150%;
@@ -290,37 +257,15 @@
 }
 
 .dialog__button {
-  border: 2px solid var(--accent-color, #000);
   padding: 9px 17px;
-  transition: box-shadow 0.3s ease;
-  position: relative;
-  cursor: pointer;
-  color: var(--color-text, #fff);
-  background-color: #fff;
-}
-
-.dialog__button:focus {
-  outline: none;
-  box-shadow: 2px 2px var(--accent-color, #000);
-}
-
-.dialog__button::before {
-  content: "";
-  position: absolute;
-  background-color: var(--accent-color, #000);
-  inset: 0;
-  inline-size: 100%;
-  block-size: 100%;
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: transform 0.5s ease-in-out;
-}
-
-.dialog__button:hover::before {
-  transform: scaleX(1);
+  text-transform: uppercase;
 }
 
 @media (width > 376px) {
+  .header {
+    padding: 130px 122.5px;
+  }
+
   .save__memory-button {
     flex-direction: row;
   }

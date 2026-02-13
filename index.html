@@ -43,7 +43,7 @@
           </p>
           <div class="card__buttons">
             <button
-              type="submit"
+              type="button"
               class="card__icon-button"
               aria-label="Поставить лайк карточке"
             >
@@ -80,7 +80,7 @@
                 </g>
               </svg>
             </button>
-            <button type="submit" class="card__like-button">
+            <button type="button" class="button card__like-button">
               <span class="button__text"> Like </span>
             </button>
           </div>
@@ -149,7 +149,7 @@
                 </g>
               </svg>
             </button>
-            <button type="submit" class="card__like-button">
+            <button type="submit" class="button card__like-button">
               <span class="button__text"> Like </span>
             </button>
           </div>
@@ -216,7 +216,7 @@
                 </g>
               </svg>
             </button>
-            <button type="submit" class="card__like-button">
+            <button type="submit" class="button card__like-button">
               <span class="button__text"> Like </span>
             </button>
           </div>
@@ -285,7 +285,7 @@
                 </g>
               </svg>
             </button>
-            <button type="submit" class="card__like-button">
+            <button type="submit" class="button card__like-button">
               <span class="button__text"> Like </span>
             </button>
           </div>
@@ -355,7 +355,7 @@
                 </g>
               </svg>
             </button>
-            <button type="submit" class="card__like-button">
+            <button type="submit" class="button card__like-button">
               <span class="button__text"> Like </span>
             </button>
           </div>
@@ -422,7 +422,7 @@
                 </g>
               </svg>
             </button>
-            <button type="submit" class="card__like-button">
+            <button type="submit" class="button card__like-button">
               <span class="button__text"> Like </span>
             </button>
           </div>
@@ -489,7 +489,7 @@
                 </g>
               </svg>
             </button>
-            <button type="submit" class="card__like-button">
+            <button type="submit" class="button card__like-button">
               <span class="button__text"> Like </span>
             </button>
           </div>
@@ -558,53 +558,53 @@
                 </g>
               </svg>
             </button>
-            <button type="submit" class="card__like-button">
+            <button type="submit" class="button card__like-button">
               <span class="button__text"> Like </span>
             </button>
           </div>
         </div>
       </article>
-    </main>
-    <footer class="footer">
-      <button
-        type="button"
-        class="save__memory-button"
-        onclick="window.memory.showModal()"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 39 39"
-          width="28"
-          height="28"
-          class="floppy"
-          overflow="visible"
+      <div class="save__button-area">
+        <button
+          type="button"
+          class="button save__memory-button"
+          onclick="window.memory.showModal()"
         >
-          <use href="./svg/floppy.svg#floppy"></use>
-        </svg>
-        <span class="button__text"> Сохранить на память </span>
-      </button>
-      <dialog class="dialog" id="memory">
-        <div class="dialog_content">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 39 39"
-            width="39"
-            height="39"
+            width="28"
+            height="28"
             class="floppy"
+            overflow="visible"
           >
             <use href="./svg/floppy.svg#floppy"></use>
           </svg>
-          <p class="dialog__text">Вставьте дискету, чтобы продолжить</p>
-        </div>
-        <button
-          type="button"
-          class="dialog__button"
-          onclick="window.memory.close()"
-        >
-          <span class="button__text"> ОК </span>
+          <span class="button__text"> Сохранить на память </span>
         </button>
-      </dialog>
-    </footer>
+        <dialog class="dialog" id="memory">
+          <div class="dialog_content">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 39 39"
+              width="39"
+              height="39"
+              class="floppy"
+            >
+              <use href="./svg/floppy.svg#floppy"></use>
+            </svg>
+            <p class="dialog__text">Вставьте дискету, чтобы продолжить</p>
+          </div>
+          <button
+            type="button"
+            class="button dialog__button"
+            onclick="window.memory.close()"
+          >
+            <span class="button__text"> ОК </span>
+          </button>
+        </dialog>
+      </div>
+    </main>
     <script src="./scripts/like.js"></script>
   </body>
 </html>
